@@ -158,6 +158,7 @@ section .cachorros {
     object-fit: cover;
     margin-bottom: 10px;    
     border: 7px solid #532a02;
+    margin: 10px;
 }
 
 .cartaoCachorro h4 {
