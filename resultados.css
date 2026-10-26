@@ -104,10 +104,11 @@ section .caixasCao{
 }
 
 section .cachorros {
-    padding: 20px;
+    padding: 50px;
     background-color: rgb(252, 216, 163);
     border-radius: 10px;
     margin-top: 20px;
+    padding-right: 70px;
 }
 
 
@@ -173,4 +174,3 @@ section .cachorros {
     color: #555555;
     line-height: 1.4;
 }
-
