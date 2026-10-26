@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fcfcfc;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 25px;
+    background-color: rgb(255, 153, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+/* Centraliza os blocos de texto e imagens verticais */
+.centralizar-bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.top-spacing {
+    margin-top: 20px;
+}
+
+.historia-projeto img {
+    width: 150px; /* Tamanho ajustado para o logo da história */
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.historia-projeto p {
+    font-size: 18px; /* Ajuste para melhor leitura em vez de 30px */
+    line-height: 1.6;
+}
+
+.agrupamentoflex {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os cartões desçam para a linha seguinte em ecrãs menores */
+    padding: 20px;
+}
+
+.cartao {
+    background-color: rgb(252, 216, 163);
+    border: 2px solid rgb(255, 153, 0);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 250px; /* Ajustado de 500px para evitar largura excessiva */
+}
+
+.cartao img {
+    width: 100%;
+    height: 250px; /* Reduzido de 467px para evitar imagens demasiado longas nos cartões */
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Marca e Navegação */
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+    text-decoration: none;
+}
+
+.marca img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #fff; /* Alterado para contraste visível */
+}
+
+.botoes-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.botao-login,
+.botao-cadastro {
+    padding: 8px 15px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #222;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.botao-login:hover {
+    background-color: #222;
+    color: white;
+}
+
+.botao-cadastro {
+    background-color: #222;
+    color: white;
+}
+
+.botao-cadastro:hover {
+    background-color: white;
+    color: #222;
+}
