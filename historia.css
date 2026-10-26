@@ -1,6 +1,7 @@
-.centralizar{
-    display: flex;
-    justify-content: center;
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fcfcfc;
 }
 
 .cabecalho {
@@ -64,15 +65,8 @@
 }
 
 .marca img {
-    width: 45px;
-    height: 45px;
+    height: 60px;
     object-fit: contain;
-}
-
-.marca h1 {
-    font-size: 25px;
-    margin: 0;
-    white-space: nowrap;
 }
 
 .nav {
@@ -84,65 +78,43 @@
 .nav a {
     color: #222;
     text-decoration: none;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .nav a:hover {
-    color: #f28c28;
+    color: #fff; /* Alterado para contraste visível */
 }
 
 .botoes-nav {
     display: flex;
-    gap: 8px;
+    gap: 10px;
 }
 
 .botao-login,
 .botao-cadastro {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border: 1px solid #222;
     border-radius: 4px;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 13px;
+    font-weight: bold;
     color: #222;
     background-color: white;
+    transition: all 0.3s ease;
 }
 
 .botao-login:hover {
-    border-color: #f28c28;
-}
-
-.botao-cadastro {
-    background-color: #ffffff;
-    border-color: #f28c28;
-    color: rgb(0, 0, 0);
-}
-
-.botao-cadastro:hover,
-.botao:hover {
-    background-color: #f28c28;
+    background-color: #222;
     color: white;
 }
 
-
-body{
-    margin: 0;
+.botao-cadastro {
+    background-color: #222;
+    color: white;
 }
 
-.centralizar p{
-  font-size: 30px;
-  text-align: center;
+.botao-cadastro:hover {
+    background-color: white;
+    color: #222;
 }
-
-.rodape img{
-    height:45px;
-    width: 45px;
-    object-fit: contain;
-}
-
-a{
-    font-size: 25px;       /* Aumenta o tamanho da fonte */
-    letter-spacing: 2px;  /* Separa as letras da palavra */
-    margin: 0 15px;       /* Separa um link do outro (espaço externo) */
-    padding: 5px 10px;    /* Opcional: aumenta a área clicável (espaço interno) */
-}
-/* Cartões dos Cães  */
