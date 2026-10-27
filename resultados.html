@@ -1,136 +1,96 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <title>Nossos resultados</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="resultados.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos resultados - Projeto Cão Feliz</title>
+    <!-- Corrigido o caminho para o CSS (assumindo que estão na mesma pasta) -->
+    <link rel="stylesheet" href="css/resultados.css">
 </head>
-
 <body>
-    <section>
-        <header class="cabecalho">
-            <a href="index.html" class="marca">
-                <img src="imagens/cao-feliz.png" alt="Logo Projeto Cão Feliz" width="100">
-            </a>
+    <header class="cabecalho">
+        <a href="home.html" class="marca">
+            <img src="imagens/cao-feliz.png" alt="Logo Projeto Cão Feliz" width="100">
+        </a>
+        <nav class="nav">
+            <a href="home.html">Início</a>
+            <a href="historia.html">Sobre</a>
+            <a href="resultados.html">Cães</a>
+            <a href="formas.html">Como Ajudar</a>
+            <a href="resultados.html">Resultados</a>
+        </nav>
+        <div class="botoes-nav">
+            <a href="formas.html" class="botao-cadastro">Participar!</a>
+        </div>
+    </header>
 
-            <nav class="nav">
-                <a href="index.html">Início</a>
-                <a href="historia.html">Sobre</a>
-                <a href="resultados.html">Cães</a>
-                <a href="formas.html">Como Ajudar</a>
-                <a href="resultados.html">Resultados</a>
-            </nav>
+    <main>
+        <section class="titulo">
+            <h1>Cães que aguardam por uma família</h1>
+        </section>
+        <hr>
+        
+        <div class="conteudoPrincipal">
+            <section class="caixasCao">
+                <div class="selecCao">
+                    <h3>Raça:</h3>
+                    <label for="viralata"><input type="checkbox" name="raca" id="viralata">Vira-lata</label>
+                    <label for="shitzu"><input type="checkbox" name="raca" id="shitzu">Shi-Tzu</label>
+                    <label for="pincher"><input type="checkbox" name="raca" id="pincher">Pincher</label>
 
-            <div class="botoes-nav">
-                <a href="#" class="botao-login">LOG IN</a>
-                <a href="paginas/participar.html" class="botao-cadastro">SIGN UP</a>
-            </div>
-        </header>
-        <main>
-            <section class="titulo">
-                <div class="titulo">
-                    <h1>Cães que aguardam por uma família</h1>
+                    <h3>Sexo:</h3>
+                    <label for="macho"><input type="checkbox" name="sexo" id="macho">Macho</label>
+                    <label for="femea"><input type="checkbox" name="sexo" id="femea">Fêmea</label>
+
+                    <h3>Idade:</h3>
+                    <label for="idade-5"><input type="checkbox" name="idade" id="idade-5">Menor que 5 anos</label>
+                    <label for="idade-10"><input type="checkbox" name="idade" id="idade-10">Menor que 10 anos</label>
+                    <label for="idade+10"><input type="checkbox" name="idade" id="idade+10">Maior que 10 anos</label>
                 </div>
             </section>
-            <hr>
-            <div class="conteudoPrincipal">
-                <section class="caixasCao">
-                    <div class="selecCao">
-                        <h3>Raça:</h3>
-                        <label for="viralata"><input type="checkbox" name="raca" id="viralata">Vira-lata</label>
-                        <br>
-                        <label for="shitzu"><input type="checkbox" name="raca" id="shitzu">Shi-Tzu</label>
-                        <br>
-                        <label for="pincher"><input type="checkbox" name="raca" id="pincher">Pincher</label>
 
-                        <h3>Sexo:</h3>
-
-                        <label for="macho"><input type="checkbox" name="sexo" id="macho">Macho</label>
-                        <br>
-                        <label for="femea"><input type="checkbox" name="sexo" id="femea">Fêmea</label>
-
-                        <h3>Idade:</h3>
-
-                        <label for="idade-5"><input type="checkbox" name="idade" id="idade-5">Menor que 5 anos</label>
-                        <br>
-                        <label for="idade-10"><input type="checkbox" name="idade" id="idade-10">Menor que 10 anos</label>
-                        <br>
-                        <label for="idade+10"><input type="checkbox" name="idade" id="idade+10">Maior que 10 anos</label>
+            <section class="cachorros">
+                <!-- Removidas as tags <tr> e <td> -->
+                <div class="agrupaCartao">
+                    <div class="cartaoCachorro">
+                        <img src="imagens/susie.jpg" alt="Susie">
+                        <h4>Susie</h4>
+                        <p>Sexo: Fêmea<br>Idade: 3 anos<br>Raça: Vira-lata/Pincher</p>
                     </div>
-                </section>
-                <section class="cachorros">
-                    <div class="agrupaCartao">
-                        <tr>
-                            <div class="cartaoCachorro">
-                                <td>
-                                    <img src="imagens/susie.jpg" alt="Susie">
-                                    <h4>Susie</h4>
-                                    <p>Sexo: Fêmea<br>
-                                        Idade: 3 anos<br>
-                                        Raça: Vira-lata/Pincher </p>
-                                </td>
-                            </div>
-                            <div class="cartaoCachorro">
-                                <td>
-                                    <img src="imagens/caramelo.jpg" alt="Caramelo">
-                                    <h4>Caramelo</h4>
-                                    <p>Sexo: Macho<br>
-                                        Idade: 5 anos<br>
-                                        Raça: Vira-lata</p>
-                                </td>
-                            </div>
-                        </tr>
-                        <tr>
-                            <div class="cartaoCachorro">
-                                <td>
-                                    <img src="imagens/bela.jpg" alt="Bela">
-                                    <h4>BELA</h4>
-                                    <p>Sexo: Fêmea<br>
-                                        Idade: 2 anos<br>
-                                        Raça: Vira-lata</p>
-                                </td>
-                            </div>
-                            <div class="cartaoCachorro">
-                                <td>
-                                    <img src="imagens/bobe.jpg" alt="Bobe">
-                                    <h4>BOBE</h4>
-                                    <p>Sexo: Macho<br>
-                                        Idade: 4 anos<br>
-                                        Raça: Vira-lata</p>
-                                </td>
-                            </div>
-                        </tr>
-                        <tr>
-                            <div class="cartaoCachorro">
-                                <td>
-                                    <img src="imagens/jade.jpg" alt="Jade">
-                                    <h4>JADE</h4>
-                                    <p>Sexo: Fêmea<br>
-                                        Idade: 3 anos<br>
-                                        Raça: Shi-tzu</p>
-                                </td>
-                            </div>
-                            <div class="cartaoCachorro">
-                                <td>
-                                    <img src="imagens/thor.jpg" alt="Thor">
-                                    <h4>THOR</h4>
-                                    <p>Sexo: Macho<br>
-                                        Idade: 1 ano<br>
-                                        Raça: Pincher</p>
-                                </td>
-                            </div>
-                        </tr>
+                    <div class="cartaoCachorro">
+                        <img src="imagens/caramelo.jpg" alt="Caramelo">
+                        <h4>Caramelo</h4>
+                        <p>Sexo: Macho<br>Idade: 5 anos<br>Raça: Vira-lata</p>
                     </div>
-                </section>
-            </div>
-        </main>
+                    <div class="cartaoCachorro">
+                        <img src="imagens/bela.jpg" alt="Bela">
+                        <h4>BELA</h4>
+                        <p>Sexo: Fêmea<br>Idade: 2 anos<br>Raça: Vira-lata</p>
+                    </div>
+                    <div class="cartaoCachorro">
+                        <img src="imagens/bobe.jpg" alt="Bobe">
+                        <h4>BOBE</h4>
+                        <p>Sexo: Macho<br>Idade: 4 anos<br>Raça: Vira-lata</p>
+                    </div>
+                    <div class="cartaoCachorro">
+                        <img src="imagens/jade.jpg" alt="Jade">
+                        <h4>JADE</h4>
+                        <p>Sexo: Fêmea<br>Idade: 3 anos<br>Raça: Shi-tzu</p>
+                    </div>
+                    <div class="cartaoCachorro">
+                        <img src="imagens/thor.jpg" alt="Thor">
+                        <h4>THOR</h4>
+                        <p>Sexo: Macho<br>Idade: 1 ano<br>Raça: Pincher</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-
-
+    <footer class="rodape">
+        <p>Projeto Cão Feliz</p>
+        <p>Todos os direitos reservados.</p>
+        <p>Contato: (67) 4002-8922</p>
+    </footer>
 </body>
-
 </html>

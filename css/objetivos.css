@@ -1,0 +1,16 @@
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    padding: 18px;
+    background-color: #eee;
+    font-size: 12px;
+    flex-wrap: wrap;
+}
+
+.rodape img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
