@@ -1,3 +1,187 @@
+
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 25px;
+    background-color: rgb(255, 153, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #222;
+    text-decoration: none;
+}
+
+.marca img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.botoes-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.botao-login,
+.botao-cadastro {
+    padding: 8px 15px;
+    border: 1px solid #222;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    color: #222;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.botao-login:hover {
+    background-color: #222;
+    color: white;
+}
+
+.botao-cadastro {
+    background-color: #222;
+    color: white;
+}
+
+.botao-cadastro:hover {
+    background-color: white;
+    color: #222;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; 
+    margin-bottom: 60px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.conteudo{
+    display: flex;
+    align-items: center;
+    gap: 40px; 
+    margin-top: 30px;
+}
+
+.imagem-cao-feliz {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 180px 30px 200px 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    border: 5px solid #ff9900;
+}
+
+
+.imagem-cao-feliz:hover {
+    transform: scale(1.02);
+    transition: transform 0.5s ease;
+}
+
+.icone-proposito img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    background-color: none;
+    mix-blend-mode: multiply;
+}
+
+.secao-proposito {
+    flex: 1.5;    
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+    
+}
+
+.bloco-proposito {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.bloco-proposito:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 153, 0, 0.15); /* Sombra laranja de destaque */
+}
+
+.icone-proposito img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+}
+
+.texto-proposito h2 {
+    font-size: 2rem;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.texto-proposito p, 
+.texto-proposito ul {
+    color: #444;
+    margin: 0;
+}
+
+.texto-proposito ul {
+    padding-left: 25px;
+}
+
+.texto-proposito ul li {
+    margin-bottom: 10px;
+}
+
 .rodape {
     display: flex;
     justify-content: space-around;
