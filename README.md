@@ -3,3 +3,4 @@ Feito por:
  Yago Felix-Gerente
  Henrique Palú-Desenvolvedor
  Miguel Valentim-Desenvolvedor
+ Gustavo Fazani-Desenvolvedor

@@ -189,7 +189,7 @@ body {
     align-items: center;
     gap: 15px;
     padding: 18px;
-    background-color: #eee;
+    background-color: lightgray;
     font-size: 12px;
     flex-wrap: wrap;
 }
